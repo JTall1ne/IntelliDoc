@@ -1,0 +1,7 @@
+gitpython
+openai>=1.0
+click
+pytest
+tree-sitter
+langchain-community
+python-dotenv
