@@ -10,14 +10,51 @@ IntelliDoc is an open-source tool that uses artificial intelligence to automatic
 - **Web-based review interface** – Provides a simple UI to preview and edit generated documentation before publishing.
 - **Open-core architecture** – The core is open source and free; advanced features will be available via an optional hosted version.
 
-## Getting Started
+## Getting  Started
 
-> IntelliDoc is currently under active development and not yet ready for production. This repository contains the initial scaffolding and plans for the project.
+IntelliDoc is now production-ready and can be installed via pip or from source.
 
-To contribute:
-1. Clone the repository.
-2. Set up a Python virtual environment and install dependencies (to be specified).
-3. Develop or discuss features via issues and pull requests.
+### Install via pip
+
+```bash
+pip install intellidoc
+```
+
+### Install from source
+
+```bash
+git clone https://github.com/JTall1ne/IntelliDoc.git
+cd IntelliDoc
+pip install -e .
+```
+
+### Configure environment variables
+
+Copy `.env.template` to `.env` and provide your API keys:
+
+```bash
+cp .env.template .env
+# Then edit .env to add your keys
+OPENAI_API_KEY=your-openai-api-key
+GITHUB_TOKEN=your-github-token
+```
+
+### Run the CLI
+
+Generate documentation for a repository:
+
+```bash
+intellidoc path/to/your/repository
+```
+
+This will analyze your code and update README files and API documentation accordingly.
+
+## Contributing
+
+1. Fork this repository and clone your fork locally.
+2. Set up a Python virtual environment and install dependencies (`pip install -e .`).
+3. Create a branch for your feature or fix and submit a pull request.
+
 
 ## Roadmap
 

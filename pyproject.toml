@@ -10,7 +10,7 @@ readme = "README.md"
 authors = [
   { name="JTall1ne", email="YOUR_EMAIL_HERE" }
 ]
-license = { text = "MIT" }
+license = { text = "Apache-2.0" }
 requires-python = ">=3.9"
 dependencies = [
   "requests>=2.28",
